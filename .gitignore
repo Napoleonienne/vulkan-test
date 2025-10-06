@@ -1,0 +1,66 @@
+# ===============================
+# Game Engine C++ Project Ignore
+# ===============================
+
+### C++ Compiled Files ###
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.a
+*.lib
+*.lai
+*.lo
+*.slo
+*.pch
+*.gch
+*.mod
+*.smod
+*.d
+
+### Temporary Files ###
+*~
+*.swp
+*.tmp
+*.bak
+*.log
+
+### Build / CMake ###
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Makefile
+CMakeLists.txt.user
+install_manifest.txt
+_deps/
+*-prefix/
+
+# Build output folders
+out/
+bin/
+build/
+dist/
+
+### Visual Studio Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+.history/
+*.vsix
+
+### Linux / System Files ###
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
