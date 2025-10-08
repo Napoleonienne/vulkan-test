@@ -1,3 +1,6 @@
+#define GLFW_INCLUDE_VULKAN
+#include <GLFW/glfw3.h>
+
 #include <iostream>
 #include <stdexcept>
 #include <functional>
@@ -18,8 +21,7 @@
 
 #endif
 
-#define GLFW_INCLUDE_VULKAN
-#include <GLFW/glfw3.h>
+
 
 
 
@@ -150,9 +152,7 @@ private:
         //ajoute a info
         createInfo.enabledExtensionCount = glfwExtensionCount;
         createInfo.ppEnabledExtensionNames = glfwExtensions;
-        const char* layers[] = { "VK_LAYER_KHRONOS_validation" };
-        createInfo.enabledLayerCount = 1; //si tu veux attraper les erreur vulkan et  0 desativiver et 1 allimer et fauxt ajouter une
-        createInfo.ppEnabledLayerNames = layers;
+        createInfo.enabledLayerCount = 0; //si tu veux attraper les erreur vulkan et  0 desativiver et 1 allimer et fauxt ajouter une
         VkResult result = vkCreateInstance(&createInfo, nullptr, &instance);
 
 
