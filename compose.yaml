@@ -1,0 +1,6 @@
+services:
+  vulkantest:
+    image: vulkantest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
